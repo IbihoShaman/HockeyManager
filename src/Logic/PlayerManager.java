@@ -1,4 +1,9 @@
-package Model;
+package Logic;
+
+import Model.Defender;
+import Model.Forward;
+import Model.Goalie;
+import Model.Player;
 
 import java.util.ArrayList;
 
@@ -21,9 +26,11 @@ public class PlayerManager {
                 youngestGoalie = player;
             }
         }
-        System.out.println("The youngest goalie is:"
-                            + "\n Surname: " + youngestGoalie.getFirstName()
-                            + "\n Last Name: " + youngestGoalie.getLastName()
-                            + "\n Age: " + youngestGoalie.getAge());
+        if(youngestGoalie != null){
+            System.out.println("The youngest goalie is:"
+                    + "\n Surname: " + youngestGoalie.getFirstName()
+                    + "\n Last Name: " + youngestGoalie.getLastName()
+                    + "\n Age: " + youngestGoalie.getAge());
+        } else System.out.println("There are no goalies in the list");
     }
 }

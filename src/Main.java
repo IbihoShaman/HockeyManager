@@ -1,4 +1,6 @@
-import Model.*;
+import Logic.PlayerManager;
+import Model.Player;
+import Logic.*;
 
 import java.util.ArrayList;
 
