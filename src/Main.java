@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args){
         final PlayerManager playerManager = new PlayerManager();
-        ArrayList<Player> goalieList = new ArrayList<Player>();
+        ArrayList<Player> goalieList = new ArrayList<>();
 
         Player forward1 = playerManager.createForward("John","Smith", 25, 15);
         Player defender1 = playerManager.createDefender("Adam", "Taylor", 22, 10);
